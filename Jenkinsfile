@@ -30,7 +30,7 @@ pipeline {
                     // sh '. venv/bin/activate'
                     // Install Selenium into the virtual environment
                     // sh 'pwd'
-                    # run pytest
+                    // launch pytest
                     sh 'pytest'
                 }
             }
