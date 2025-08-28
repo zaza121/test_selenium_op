@@ -17,6 +17,7 @@ pipeline {
                     sh '. venv/bin/activate'
                     // Install Selenium into the virtual environment
                     sh 'pip install --break-system-packages selenium'
+                    sh 'pip install --break-system-packages pytest'
                 }
             }
         }
@@ -28,8 +29,8 @@ pipeline {
                     // Activate the virtual environment
                     // sh '. venv/bin/activate'
                     // Install Selenium into the virtual environment
-                    sh 'pwd'
-                    sh 'python3 script0001.py'
+                    // sh 'pwd'
+                    sh 'pytest'
                 }
             }
         }
