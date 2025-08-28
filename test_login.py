@@ -35,6 +35,7 @@ try:
 
     # Print the page title
     print(f"Page Title: {driver.title}")
+    assert driver.title == "Odoo"
 
     # Find the search bar by its name attribute
     # search_bar = driver.find_element(By.NAME, "q")
