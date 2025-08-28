@@ -53,4 +53,3 @@ try:
 finally:
     # Close the browser
     driver.quit()
-    driver.quit()
