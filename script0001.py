@@ -17,11 +17,11 @@ try:
     # driver.get("https://www.python.org")
     driver.get("http://146.59.110.97:8083/web/database/selector")
     driver.set_window_size(602, 743)
-    driver.implicitly_wait(4000)
+    driver.implicitly_wait(40000)
 
     # select database
     driver.find_element(By.LINK_TEXT, "21_07_2025").click()
-    driver.implicitly_wait(5000)
+    driver.implicitly_wait(50000)
 
     # set credentials
     driver.find_element(By.ID, "login").click()
@@ -31,7 +31,7 @@ try:
     driver.find_element(By.ID, "password").send_keys("odoo2023!")
     driver.find_element(By.CSS_SELECTOR, ".mb-3:nth-child(4)").click()
     driver.find_element(By.CSS_SELECTOR, ".btn-primary").click()
-    driver.implicitly_wait(8000)
+    driver.implicitly_wait(80000)
 
     # Print the page title
     print(f"Page Title: {driver.title}")
