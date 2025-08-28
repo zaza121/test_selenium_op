@@ -28,7 +28,8 @@ pipeline {
                     // Activate the virtual environment
                     // sh '. venv/bin/activate'
                     // Install Selenium into the virtual environment
-                    sh 'python3 script001.py'
+                    sh 'pwd'
+                    sh 'python3 script0001.py'
                 }
             }
         }
